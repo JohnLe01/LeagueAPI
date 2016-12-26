@@ -1,0 +1,16 @@
+PODS:
+  - LeagueAPI (0.1.0)
+
+DEPENDENCIES:
+  - LeagueAPI (from `../`)
+
+EXTERNAL SOURCES:
+  LeagueAPI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LeagueAPI: e1c52afd108013c15f176cefcbfd3330a4cac467
+
+PODFILE CHECKSUM: d7fbf013f0714782491f05444b0f75c32f836b3a
+
+COCOAPODS: 1.2.0.beta.1

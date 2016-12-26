@@ -1,0 +1,22 @@
+{
+  "name": "LeagueAPI",
+  "version": "0.1.0",
+  "summary": "A short description of LeagueAPI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/LeagueAPI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mason Phillips": "math.matrix.tumblr@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/LeagueAPI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LeagueAPI/Classes/**/*"
+}
