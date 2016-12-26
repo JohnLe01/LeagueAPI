@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LeagueAPI_Example' do
+  pod 'LeagueAPI', :path => '../'
+
+  target 'LeagueAPI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
