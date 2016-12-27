@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum MSLeagueRegion: String {
+public enum MSLeagueRegion: String {
     case all = "all"
     case northAmerica = "na"
     case brazil = "br"

@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import Neon
 
 class ViewController: UIViewController {
 
+    let summonerName: UITextField = UITextField()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        view.backgroundColor = .white
+        
+        let label = UILabel()
+        label.text = "Welcome"
+        label.textAlignment = .center
+        view.addSubview(label)
+        label.anchorInCenter(width: view.width, height: 30)
+        
+        summonerName.placeholder = "Enter Summoner Name"
+        view.addSubview(summonerName)
+        summonerName.alignAndFillWidth(align: .underCentered, relativeTo: summonerName, padding: 10, height: 30)
     }
 
     override func didReceiveMemoryWarning() {

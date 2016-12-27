@@ -1,16 +1,27 @@
 PODS:
-  - LeagueAPI (0.1.0)
+  - Alamofire (4.2.0)
+  - LeagueAPI (0.1):
+    - Alamofire
+    - SwiftyJSON
+  - Neon (0.4.0)
+  - SwiftyJSON (3.1.3)
 
 DEPENDENCIES:
+  - Alamofire
   - LeagueAPI (from `../`)
+  - Neon
+  - SwiftyJSON
 
 EXTERNAL SOURCES:
   LeagueAPI:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LeagueAPI: e1c52afd108013c15f176cefcbfd3330a4cac467
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  LeagueAPI: d3db40a2d5e73b65713603c0916e5580cb37b114
+  Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
+  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
 
-PODFILE CHECKSUM: d7fbf013f0714782491f05444b0f75c32f836b3a
+PODFILE CHECKSUM: 065f1977efab7e6088df19514c872ecb52d91d15
 
 COCOAPODS: 1.2.0.beta.1

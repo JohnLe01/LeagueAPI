@@ -3,10 +3,13 @@ import XCTest
 import LeagueAPI
 
 class Tests: XCTestCase {
+
+    var apiWrapper: MSCoreLeagueApi?
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        apiWrapper = MSCoreLeagueApi(withKey: "84361dd6-8ee9-4f8f-902b-6a3cc52672cf", usingRegion: .northAmerica)
     }
     
     override func tearDown() {
@@ -15,7 +18,7 @@ class Tests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
+        apiWrapper?.initializeStaticData()
         XCTAssert(true, "Pass")
     }
     

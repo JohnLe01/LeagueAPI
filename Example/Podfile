@@ -4,6 +4,10 @@ platform :ios, "10.0"
 target 'LeagueAPI_Example' do
   pod 'LeagueAPI', :path => '../'
 
+  pod 'SwiftyJSON'
+  pod 'Alamofire'
+  pod 'Neon'
+
   target 'LeagueAPI_Tests' do
     inherit! :search_paths
 
