@@ -17,6 +17,7 @@ public final class MSCoreLeagueApi {
     
     static var requestRegion: MSLeagueRegion = .all
     
+    // MARK: - Public 
     public init(withKey k: String) {
         apiKey = k
     }
@@ -33,8 +34,6 @@ public final class MSCoreLeagueApi {
     private func getChampionStaticData() -> Array<MSChampion> {
         let params: Parameters = ["champData": "all", "api_key": apiKey]
         Alamofire.request("https://global.api.pvp.net/api/lol/static-data/\(MSCoreLeagueApi.requestRegion.rawValue)/v1.2/champion/22", parameters: params).responseObject { (response: DataResponse<MSChampion>) in
-            debugPrint(response)
-            
             if let champ: MSChampion = response.result.value {
                 print(champ)
                 

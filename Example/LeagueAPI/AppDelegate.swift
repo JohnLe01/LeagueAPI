@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import LeagueAPI
+
+// Application-wide Declarations
+let LeagueAPIWrapper: MSCoreLeagueApi = MSCoreLeagueApi(withKey: "84361dd6-8ee9-4f8f-902b-6a3cc52672cf", usingRegion: .northAmerica)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -22,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
+        
+        LeagueAPIWrapper.initializeStaticData()
         
         return true
     }

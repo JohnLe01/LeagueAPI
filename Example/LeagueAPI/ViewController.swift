@@ -16,17 +16,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .white
+        view.backgroundColor = .gray
         
         let label = UILabel()
         label.text = "Welcome"
         label.textAlignment = .center
         view.addSubview(label)
         label.anchorInCenter(width: view.width, height: 30)
-        
-        summonerName.placeholder = "Enter Summoner Name"
-        view.addSubview(summonerName)
-        summonerName.alignAndFillWidth(align: .underCentered, relativeTo: summonerName, padding: 10, height: 30)
+
+        let button = UIButton()
+        button.addTarget(self, action: #selector(ViewController.refreshData), for: .touchUpInside)
+        button.setTitle("Refresh Static Data", for: .normal)
+        button.setTitleColor(.red, for: .normal)
+        view.addSubview(button)
+        button.alignAndFillWidth(align: .underCentered, relativeTo: label, padding: 10, height: 30)
+    }
+    
+    func refreshData() {
+        LeagueAPIWrapper.initializeStaticData()
     }
 
     override func didReceiveMemoryWarning() {
