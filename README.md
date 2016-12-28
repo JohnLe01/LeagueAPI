@@ -17,6 +17,25 @@ Datez
 
 ## Usage
 See [the wiki](https://github.com/mathmatrix828/LeagueAPI/wiki) for usage details
+**NOTE**: only supports NA and static data currently
+
+## TODO
+[ ] Finish static data pull
+  [ ] Items
+  [ ] Runes
+  [ ] Masteries
+  [ ] Images
+[ ] Finish MSSummoner
+  [ ] Statistics
+    [ ] Ranked (5v5/3v3)
+    [ ] Summary
+  [ ] Runes and Masteries
+  [ ] Champion Masteries
+  [ ] Current match (if available)
+  [ ] Past matches
+[ ] Add support for regions
+[ ] Finish the usage guide (wiki)
+
 
 ## Installation
 
