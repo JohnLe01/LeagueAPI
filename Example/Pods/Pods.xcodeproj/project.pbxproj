@@ -37,6 +37,14 @@
 		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264340A829DF5330D8F641605D8F1129 /* ServerTrustPolicy.swift */; };
 		631941E0E5B22CB33A368D294B36FF69 /* Pods-LeagueAPI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA3591FDD652F0517EBB1E673CA71FE /* Pods-LeagueAPI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6603C8DC7C1D5E7DBDD9D4D48B45A244 /* MMDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FF5067484B73961684D7409009929A /* MMDrawerController-dummy.m */; };
+		66FD72EE1E135BBF003203BC /* MSChampionMastery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD72EC1E135BBB003203BC /* MSChampionMastery.swift */; };
+		66FD72F01E135BFB003203BC /* MSGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD72EF1E135BFB003203BC /* MSGame.swift */; };
+		66FD72F21E135C5A003203BC /* MSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD72F11E135C5A003203BC /* MSItem.swift */; };
+		66FD72F41E135C60003203BC /* MSMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD72F31E135C60003203BC /* MSMap.swift */; };
+		66FD72F61E135C69003203BC /* MSMastery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD72F51E135C69003203BC /* MSMastery.swift */; };
+		66FD72F81E135C6F003203BC /* MSRune.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD72F71E135C6F003203BC /* MSRune.swift */; };
+		66FD72FA1E135C79003203BC /* MSSummonerSpell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD72F91E135C79003203BC /* MSSummonerSpell.swift */; };
+		66FD72FC1E135CA9003203BC /* MSLeagueStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD72FB1E135CA9003203BC /* MSLeagueStatus.swift */; };
 		67A5F2EF56FBF0B6BFC0682C217E114C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013FF233EE2BD25F6B2137159152D933 /* UIKit.framework */; };
 		68012935821637DD4660008A7DA214A6 /* NSCalendar+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0574111F456135DF3C92B6142165E045 /* NSCalendar+Conversion.swift */; };
 		68108E60CDD60614C4BDB668B9690F6A /* MSSummoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA72FF782D8D3B4891785D0A387C36 /* MSSummoner.swift */; };
@@ -160,20 +168,20 @@
 /* Begin PBXFileReference section */
 		013FF233EE2BD25F6B2137159152D933 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		0212F9F6B6DFF9D8821C96560FD0FEFB /* CalendarComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarComponents.swift; path = Datez/Datez/Entity/CalendarComponents.swift; sourceTree = "<group>"; };
-		0447251080A3B4D5D6C9A64A806BA597 /* MMDrawerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MMDrawerController.modulemap; sourceTree = "<group>"; };
+		0447251080A3B4D5D6C9A64A806BA597 /* MMDrawerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MMDrawerController.modulemap; sourceTree = "<group>"; };
 		052891F133A16C75E2D78CBD066DD588 /* Neon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Neon-prefix.pch"; sourceTree = "<group>"; };
 		052B16A73F3565177EBB9E2226E25E6D /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		0574111F456135DF3C92B6142165E045 /* NSCalendar+Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSCalendar+Conversion.swift"; path = "Datez/Datez/Extensions/FoundationConversion/NSCalendar+Conversion.swift"; sourceTree = "<group>"; };
 		05DC062428265B9395F5C351C7DE66F6 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		09D93E8D0537418D7D0AF3641A1A64D8 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		0A93B881946CD6098723759A3FF09088 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		0A93B881946CD6098723759A3FF09088 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		0B67CE38EED0AFD3D77B58383DFB7D36 /* ResponseSerializationExtentions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResponseSerializationExtentions.swift; sourceTree = "<group>"; };
 		0BA2A59BDC78F824BF3127C287FE0647 /* Pods-LeagueAPI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeagueAPI_Tests-dummy.m"; sourceTree = "<group>"; };
 		10DA72FF782D8D3B4891785D0A387C36 /* MSSummoner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSSummoner.swift; sourceTree = "<group>"; };
 		12E05F875448ED7C0371DB31FC99132B /* Pods-LeagueAPI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeagueAPI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		14400963A46FB83A4A3E2AEBAA98E0C5 /* Pods-LeagueAPI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeagueAPI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1717C9F6ACE099A62854D54CA91DA2D3 /* Neon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Neon.swift; path = Source/Neon.swift; sourceTree = "<group>"; };
-		17786A8E5B32AA07D2C8B5003A93375B /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		17786A8E5B32AA07D2C8B5003A93375B /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		1AA692FF0C88F09510A25677AB175046 /* NSTimeInterval+Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimeInterval+Conversion.swift"; path = "Datez/Datez/Extensions/FoundationConversion/NSTimeInterval+Conversion.swift"; sourceTree = "<group>"; };
 		1C07E4C2D9D7A365BFEE4849DC0DAE58 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		1C3D9815A7574E84A7978FC65C357CCD /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
@@ -189,18 +197,18 @@
 		2BB9491905C1A369E94D71DA4FB9F33C /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		2D79AF3EAAC1233541D9D948DE95411D /* Pods-LeagueAPI_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeagueAPI_Example-resources.sh"; sourceTree = "<group>"; };
 		2F6F45F3ECD440A0C3E8312AF967EEDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3028FE9962DB52A716FE7D7AB9F6DA87 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3028FE9962DB52A716FE7D7AB9F6DA87 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		339C096F29AE1E0848FC569DC9C9FF8D /* Neon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Neon-umbrella.h"; sourceTree = "<group>"; };
 		360AD894917D6F2D8BB1A9D94C57EF3A /* NeonFrameable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonFrameable.swift; path = Source/NeonFrameable.swift; sourceTree = "<group>"; };
-		381D27A93117AF6AB22873126C0EC670 /* Datez.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Datez.modulemap; sourceTree = "<group>"; };
+		381D27A93117AF6AB22873126C0EC670 /* Datez.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Datez.modulemap; sourceTree = "<group>"; };
 		39770710BFB46217409DB5CD9FE0A0A2 /* NSDateComponents+Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDateComponents+Conversion.swift"; path = "Datez/Datez/Extensions/FoundationConversion/NSDateComponents+Conversion.swift"; sourceTree = "<group>"; };
 		397FF11048931BCE89A71A07BA1902BE /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		3AA76F41E6BB2E04672F12ED127B892E /* Pods-LeagueAPI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeagueAPI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		44C81097307E9357F570A2C2709DBC3D /* Neon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Neon-dummy.m"; sourceTree = "<group>"; };
 		47DFFC641298F68EA095A452E0D8D072 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49C03F4B07D4F5CCE1D9F76B9BB967BC /* LeagueAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LeagueAPI.framework; path = LeagueAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C03F4B07D4F5CCE1D9F76B9BB967BC /* LeagueAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeagueAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		512130D6C787687149810B5119DE9883 /* Core.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
-		52B9EE7945AE3EF25C25B21B158C6688 /* Datez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Datez.framework; path = Datez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B9EE7945AE3EF25C25B21B158C6688 /* Datez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Datez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D042E3ACA5A2F34339BE5C1D8B33EF /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		554AA957530E5D75149D9DE19C361F78 /* MMDrawerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController-umbrella.h"; sourceTree = "<group>"; };
 		5808ED5DAA5DA09D4FA183FA87823F7C /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
@@ -211,6 +219,14 @@
 		60218ED8928007D8D0D4D6121E940071 /* Counting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Counting.swift; path = Datez/Datez/Extensions/Counting.swift; sourceTree = "<group>"; };
 		635BC48CEF619ADCABCC252D11ABA0B0 /* Datez.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Datez.xcconfig; sourceTree = "<group>"; };
 		64CF0366341A6B3EC8685F9FF703BC53 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66FD72EC1E135BBB003203BC /* MSChampionMastery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSChampionMastery.swift; sourceTree = "<group>"; };
+		66FD72EF1E135BFB003203BC /* MSGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSGame.swift; sourceTree = "<group>"; };
+		66FD72F11E135C5A003203BC /* MSItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSItem.swift; sourceTree = "<group>"; };
+		66FD72F31E135C60003203BC /* MSMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSMap.swift; sourceTree = "<group>"; };
+		66FD72F51E135C69003203BC /* MSMastery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSMastery.swift; sourceTree = "<group>"; };
+		66FD72F71E135C6F003203BC /* MSRune.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSRune.swift; sourceTree = "<group>"; };
+		66FD72F91E135C79003203BC /* MSSummonerSpell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSSummonerSpell.swift; sourceTree = "<group>"; };
+		66FD72FB1E135CA9003203BC /* MSLeagueStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSLeagueStatus.swift; sourceTree = "<group>"; };
 		691C81E582623562EFBA83D26976676E /* Pods-LeagueAPI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeagueAPI_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6E774E7CF1C0AF46F0BEF46A32A1AFCD /* NeonAlignable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonAlignable.swift; path = Source/NeonAlignable.swift; sourceTree = "<group>"; };
 		6F6F5BC2BEBE6644DD0028CE1F2DC348 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -224,14 +240,14 @@
 		8C0C755503E6991A1C70917CA65B3ABF /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = MMDrawerController/MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		90740B5109D8CD7C45AACD4F8F5B8758 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
 		931EF3627943F6666C85427006B8B474 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9603320B02A454D59E8DAD3147A2001E /* MMDrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMDrawerController.xcconfig; sourceTree = "<group>"; };
 		97CCA815A6D96D44B09AC8AD50557F7F /* CalendarComponents+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CalendarComponents+Operators.swift"; path = "Datez/Datez/Operators/CalendarComponents+Operators.swift"; sourceTree = "<group>"; };
 		9B93F022805A1F5949DA0DE833ADBE19 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		9BE98D5BFE2B8D0B9C080886D997C09E /* Pods-LeagueAPI_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeagueAPI_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		9C3A6A18A1DDDE3C9A6AB9C2B7864721 /* MMDrawerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = MMDrawerController/MMDrawerController.h; sourceTree = "<group>"; };
-		9FEC142E9C2159597779620CF489FC9E /* Pods-LeagueAPI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LeagueAPI_Example.modulemap"; sourceTree = "<group>"; };
-		A04D98950CF6D686E18F6A275F64F9D0 /* MMDrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MMDrawerController.framework; path = MMDrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEC142E9C2159597779620CF489FC9E /* Pods-LeagueAPI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LeagueAPI_Example.modulemap"; sourceTree = "<group>"; };
+		A04D98950CF6D686E18F6A275F64F9D0 /* MMDrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMDrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DF61857A20CE4FA70AAF9B46CC2A13 /* LeagueAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeagueAPI-prefix.pch"; sourceTree = "<group>"; };
 		A112AB8C1D3A597F30211FF986A01C13 /* Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Duration.swift; path = Datez/Datez/Extensions/Duration.swift; sourceTree = "<group>"; };
 		A1FF5067484B73961684D7409009929A /* MMDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMDrawerController-dummy.m"; sourceTree = "<group>"; };
@@ -246,7 +262,7 @@
 		B54E83BFC8B1156CD4E034731E4D8B40 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F8B1DE5A018ABC8F14D616532FC044 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		B9267C109B62A05F0273E33EB3E60D82 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		BC0077B4196ECB62B3FCB7718C9E5444 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0077B4196ECB62B3FCB7718C9E5444 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1AD7B80B87A52FE472FC00A7A0D1D4 /* Pods-LeagueAPI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeagueAPI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C512EC89CA102665EAC0E90E200FAE9C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6D3A421E5598E0517A89E7766737388 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -257,8 +273,8 @@
 		D69D12DDCF02FD3549F84421EFE670A6 /* LeagueAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LeagueAPI-dummy.m"; sourceTree = "<group>"; };
 		D8141BF18E6AFFD8558278E878A58F64 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = MMDrawerController/MMDrawerVisualState.m; sourceTree = "<group>"; };
 		D9E50AA5A60A50DFAD232B584FBADBC9 /* NeonExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonExtensions.swift; path = Source/NeonExtensions.swift; sourceTree = "<group>"; };
-		DB5BF496E59DDE2EBBD6FA6BB73DE4BA /* Pods_LeagueAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LeagueAPI_Example.framework; path = "Pods-LeagueAPI_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD956E5CABE619124B8D3A3472DC131D /* LeagueAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LeagueAPI.modulemap; sourceTree = "<group>"; };
+		DB5BF496E59DDE2EBBD6FA6BB73DE4BA /* Pods_LeagueAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeagueAPI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD956E5CABE619124B8D3A3472DC131D /* LeagueAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LeagueAPI.modulemap; sourceTree = "<group>"; };
 		DEE444B7717CF7506D09AFC4DA32D3AE /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		DF11764BAB466F4BDEDE4FA6DB3C576C /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = MMDrawerController/MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		DF3BA0A36E0F3BEEA8FE269C0C046104 /* MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = MMDrawerController/MMDrawerController.m; sourceTree = "<group>"; };
@@ -272,16 +288,16 @@
 		F0461E915E4607708D16FB614677D5EB /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		F058DB6A3E2177ACFA54C342A70E5DFF /* MSListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSListener.swift; sourceTree = "<group>"; };
 		F4D5315E0BD6288D2FC3E85BEE425BE7 /* MSChampion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSChampion.swift; sourceTree = "<group>"; };
-		F7DC6F7BEAA13ECF5E9CA1ADAA009564 /* Pods_LeagueAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LeagueAPI_Tests.framework; path = "Pods-LeagueAPI_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F86873855EA6039E5B154E87D5D658C3 /* Neon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Neon.modulemap; sourceTree = "<group>"; };
+		F7DC6F7BEAA13ECF5E9CA1ADAA009564 /* Pods_LeagueAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeagueAPI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86873855EA6039E5B154E87D5D658C3 /* Neon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Neon.modulemap; sourceTree = "<group>"; };
 		F9C968F9D3E4369931060BA290AFBBD4 /* DateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateView.swift; path = Datez/Datez/Entity/DateView.swift; sourceTree = "<group>"; };
 		F9E300E0ACE550D05DA813CD5D6715E7 /* Pods-LeagueAPI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeagueAPI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FC328DFE35B602627D53B9706A54ED8B /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		FCA3591FDD652F0517EBB1E673CA71FE /* Pods-LeagueAPI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeagueAPI_Tests-umbrella.h"; sourceTree = "<group>"; };
 		FCC2660E895C3FFB4E0656562D9862EE /* LeagueAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeagueAPI-umbrella.h"; sourceTree = "<group>"; };
-		FDCECCE5514105F98599FA59F8874292 /* Neon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Neon.framework; path = Neon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDCECCE5514105F98599FA59F8874292 /* Neon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Neon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA91172DE2DB9DF9E8261716A7EF801 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF159A4B54380DF4E44BB3F6736E9E40 /* Pods-LeagueAPI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LeagueAPI_Tests.modulemap"; sourceTree = "<group>"; };
+		FF159A4B54380DF4E44BB3F6736E9E40 /* Pods-LeagueAPI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LeagueAPI_Tests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,9 +386,16 @@
 			isa = PBXGroup;
 			children = (
 				F4D5315E0BD6288D2FC3E85BEE425BE7 /* MSChampion.swift */,
+				66FD72F11E135C5A003203BC /* MSItem.swift */,
+				66FD72F31E135C60003203BC /* MSMap.swift */,
+				66FD72F51E135C69003203BC /* MSMastery.swift */,
+				66FD72F71E135C6F003203BC /* MSRune.swift */,
+				66FD72F91E135C79003203BC /* MSSummonerSpell.swift */,
+				66FD72FB1E135CA9003203BC /* MSLeagueStatus.swift */,
 				10DA72FF782D8D3B4891785D0A387C36 /* MSSummoner.swift */,
+				66FD72EC1E135BBB003203BC /* MSChampionMastery.swift */,
+				66FD72EF1E135BFB003203BC /* MSGame.swift */,
 			);
-			name = MSCoreObjects;
 			path = MSCoreObjects;
 			sourceTree = "<group>";
 		};
@@ -384,7 +407,6 @@
 				041599AB4F9B0BB88988B50DBD0614D1 /* MSCoreObjects */,
 				9E211AD11C8AED18591A6762E395F6D8 /* MSInteraction */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -411,7 +433,6 @@
 			children = (
 				061F441AC37F427B7E1E89A1A6735B43 /* Classes */,
 			);
-			name = LeagueAPI;
 			path = LeagueAPI;
 			sourceTree = "<group>";
 		};
@@ -536,7 +557,6 @@
 				A707E4DD274535A91A11FC508044CBE4 /* Validation.swift */,
 				90B8D66D02AFD25F560BDFA4A4C028AC /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -587,7 +607,6 @@
 			children = (
 				F058DB6A3E2177ACFA54C342A70E5DFF /* MSListener.swift */,
 			);
-			name = MSInteraction;
 			path = MSInteraction;
 			sourceTree = "<group>";
 		};
@@ -602,7 +621,6 @@
 				1D866EBC6004F8F81088347659BF5766 /* NeonGroupable.swift */,
 				690E68B3FA8A9B6CB9752A17886136C0 /* Support Files */,
 			);
-			name = Neon;
 			path = Neon;
 			sourceTree = "<group>";
 		};
@@ -621,7 +639,6 @@
 				AAD248EF470987E1818D52F04C891DC0 /* MSLeagueRouter.swift */,
 				0B67CE38EED0AFD3D77B58383DFB7D36 /* ResponseSerializationExtentions.swift */,
 			);
-			name = MSCoreConfig;
 			path = MSCoreConfig;
 			sourceTree = "<group>";
 		};
@@ -688,7 +705,6 @@
 				8A8BADB5F5EF220A8585B39540A3CDDB /* Relativity.swift */,
 				F6B0872E2C2630167BFBE9C6910C1A6E /* Support Files */,
 			);
-			name = Datez;
 			path = Datez;
 			sourceTree = "<group>";
 		};
@@ -712,7 +728,6 @@
 				931EF3627943F6666C85427006B8B474 /* SwiftyJSON.swift */,
 				8DABAFCEDFBFA0C5B6F48ADA73772079 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -734,7 +749,6 @@
 				C7CEA606A6F4A138F0258C671AAA1BA7 /* Subclass */,
 				E3930EB68CEC418020979E0D4280559F /* Support Files */,
 			);
-			name = MMDrawerController;
 			path = MMDrawerController;
 			sourceTree = "<group>";
 		};
@@ -999,15 +1013,22 @@
 				9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */,
 				A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */,
 				F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */,
+				66FD72F41E135C60003203BC /* MSMap.swift in Sources */,
 				61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */,
+				66FD72F61E135C69003203BC /* MSMastery.swift in Sources */,
+				66FD72FA1E135C79003203BC /* MSSummonerSpell.swift in Sources */,
 				B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */,
 				A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */,
 				EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */,
 				BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */,
 				5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */,
+				66FD72F81E135C6F003203BC /* MSRune.swift in Sources */,
 				CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */,
+				66FD72F21E135C5A003203BC /* MSItem.swift in Sources */,
 				F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */,
 				7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */,
+				66FD72F01E135BFB003203BC /* MSGame.swift in Sources */,
+				66FD72FC1E135CA9003203BC /* MSLeagueStatus.swift in Sources */,
 				62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */,
 				7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */,
 				AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */,
@@ -1101,6 +1122,7 @@
 				7A01DD73C9C230807B3853F0803691D0 /* MSListener.swift in Sources */,
 				68108E60CDD60614C4BDB668B9690F6A /* MSSummoner.swift in Sources */,
 				9FB878EDD19FDFADDC6AF5BD5F6AF5C6 /* ResponseSerializationExtentions.swift in Sources */,
+				66FD72EE1E135BBF003203BC /* MSChampionMastery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

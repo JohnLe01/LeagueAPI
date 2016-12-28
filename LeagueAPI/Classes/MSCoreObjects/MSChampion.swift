@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 
 // MARK: - Core League Champion object
-public struct MSChampion: ResponseObjectSerializable, ResponseCollectionSerializable, CustomStringConvertible {
+public class MSChampion: ResponseObjectSerializable, ResponseCollectionSerializable, CustomStringConvertible {
     private let championID: Int
     
     public let allyTips: Array<String>
@@ -60,7 +60,7 @@ public struct MSChampion: ResponseObjectSerializable, ResponseCollectionSerializ
         championStatistics = MSChampionStatistics()
     }
     
-    public init?(response: HTTPURLResponse, representation: Any) {
+    public required init?(response: HTTPURLResponse, representation: Any) {
         guard
             let representation = representation as? [String: Any],
             
