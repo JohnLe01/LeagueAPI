@@ -16,7 +16,7 @@ SwiftyJSON
 Datez
 
 ## Usage
-See [the wiki](https://github.com/mathmatrix828/LeagueAPI/wiki) for usage details
+See [the wiki](https://github.com/mathmatrix828/LeagueAPI/wiki) for usage details.  
 **NOTE**: only supports NA and static data currently
 
 ## TODO
