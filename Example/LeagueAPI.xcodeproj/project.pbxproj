@@ -13,6 +13,10 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6211FF9649932E5D5039363F /* Pods_LeagueAPI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC22933161E42A47BE31F68 /* Pods_LeagueAPI_Tests.framework */; };
+		66FD72E51E1343D0003203BC /* menuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD72E41E1343D0003203BC /* menuTableViewController.swift */; };
+		66FD72E71E134833003203BC /* championsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD72E61E134833003203BC /* championsTableViewController.swift */; };
+		66FD72E91E13529E003203BC /* champDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD72E81E13529E003203BC /* champDetailViewController.swift */; };
+		66FD72EB1E135551003203BC /* summonerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD72EA1E135551003203BC /* summonerDetailViewController.swift */; };
 		E0832CAF116346989EC7B686 /* Pods_LeagueAPI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C756825E7A38A66CD838A84E /* Pods_LeagueAPI_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +44,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		62D50413B531EE7FB9D2C0EF /* Pods-LeagueAPI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueAPI_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueAPI_Tests/Pods-LeagueAPI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		66FD72E41E1343D0003203BC /* menuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuTableViewController.swift; sourceTree = "<group>"; };
+		66FD72E61E134833003203BC /* championsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = championsTableViewController.swift; sourceTree = "<group>"; };
+		66FD72E81E13529E003203BC /* champDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = champDetailViewController.swift; sourceTree = "<group>"; };
+		66FD72EA1E135551003203BC /* summonerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = summonerDetailViewController.swift; sourceTree = "<group>"; };
 		78989B7F69D62C0417ACF0BC /* Pods-LeagueAPI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueAPI_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueAPI_Example/Pods-LeagueAPI_Example.release.xcconfig"; sourceTree = "<group>"; };
 		833BDCACC92B6AA31FED4503 /* Pods-LeagueAPI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueAPI_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueAPI_Tests/Pods-LeagueAPI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C4CC4A7297E22D14B898DB01 /* Pods-LeagueAPI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueAPI_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueAPI_Example/Pods-LeagueAPI_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +109,11 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				66FD72E41E1343D0003203BC /* menuTableViewController.swift */,
+				66FD72E61E134833003203BC /* championsTableViewController.swift */,
+				66FD72E81E13529E003203BC /* champDetailViewController.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				66FD72EA1E135551003203BC /* summonerDetailViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -360,7 +372,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				66FD72EB1E135551003203BC /* summonerDetailViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				66FD72E91E13529E003203BC /* champDetailViewController.swift in Sources */,
+				66FD72E71E134833003203BC /* championsTableViewController.swift in Sources */,
+				66FD72E51E1343D0003203BC /* menuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

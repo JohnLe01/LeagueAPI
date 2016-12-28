@@ -15,6 +15,8 @@ public final class MSCoreLeagueApi {
     
     private var staticData: Bool = false
     
+    public var coreDelegate: MSCoreListener?
+    
     static var requestRegion: MSLeagueRegion = .all
     
     // MARK: - Public Init
@@ -28,36 +30,35 @@ public final class MSCoreLeagueApi {
         MSCoreLeagueApi.requestRegion = r
     }
     
+    public func registerAsDelegate(controller: MSCoreListener) {
+        coreDelegate = controller
+    }
+    
+    public func resignDelegate() {
+        coreDelegate = nil
+    }
+    
     // MARK: - Dynamic Data Methods
-    public func searchSummoner(byName n: String) -> MSSummoner {
-        var summoner: MSSummoner = MSSummoner()
-        
+    public func searchSummoner(byName n: String) {
         Alamofire.request(MSCoreRouter.searchSummoner(id: 0, name: n)).responseObject { (response: DataResponse<MSSummoner>) in
-            debugPrint(response)
-            
             if let s = response.result.value {
-                summoner = s
+                if(self.coreDelegate?.requestTypes != .summonerData) { return }
+                self.coreDelegate?.didReturn(singleObject: s)
             }
         }
-        
-        return summoner
     }
     
     // MARK: - Static Data Methods
     public func initializeStaticData() {
         //_ = getChampionStaticData()
-        _ = searchSummoner(byName: "MatrixSenpai")
     }
     
-    private func getChampionStaticData() -> Array<MSChampion> {
-        var champions: Array<MSChampion> = []
-        
+    public func getChampionStaticData() {
         Alamofire.request(MSCoreRouter.searchChamp(id: 0)).responseCollection { (response: DataResponse<[MSChampion]>) in
             if let champs = response.result.value {
-                champions = champs
+                if(self.coreDelegate?.requestTypes != .championData) { return }
+                self.coreDelegate?.didReturn(collection: champs)
             }
         }
-        
-        return champions
     }
 }

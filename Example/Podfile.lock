@@ -3,6 +3,7 @@ PODS:
   - Datez (2.0.1)
   - LeagueAPI (0.1):
     - Alamofire
+    - Datez
     - SwiftyJSON
   - MMDrawerController (0.6.0):
     - MMDrawerController/Core (= 0.6.0)
@@ -34,7 +35,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   Datez: 3a0875cf1f20d06157ebc48f338c05be86ae388c
-  LeagueAPI: d3db40a2d5e73b65713603c0916e5580cb37b114
+  LeagueAPI: a69923f4506ddc9661e613482c0fad8173f2545c
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
   SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf

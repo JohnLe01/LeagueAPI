@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-protocol ResponseObjectSerializable {
+public protocol ResponseObjectSerializable {
     init?(response: HTTPURLResponse, representation: Any)
 }
 
@@ -69,8 +69,6 @@ extension DataRequest {
     func responseCollection<T: ResponseCollectionSerializable>(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<[T]>) -> Void) -> Self {
         let responseSerializer = DataResponseSerializer<[T]> { request, response, data, error in
             guard error == nil else { return .failure(MSCoreError.network(e: error!)) }
-            
-            debugPrint(data?.description)
             
             let jsonSerializer = DataRequest.jsonResponseSerializer(options: .allowFragments)
             let result = jsonSerializer.serializeResponse(request, response, data, nil)

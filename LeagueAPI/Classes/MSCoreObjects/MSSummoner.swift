@@ -8,7 +8,7 @@
 
 import UIKit
 import Alamofire
-
+import Datez
 
 public class MSSummoner: ResponseObjectSerializable, CustomStringConvertible {
     private let summonerID: Int
@@ -17,15 +17,16 @@ public class MSSummoner: ResponseObjectSerializable, CustomStringConvertible {
     
     public let summonerName: String
     
-    public let summonerRevisionDate: NSDate
+    public let summonerRevisionDate: Date
     
     public var description: String {
-        var secondsAgo = 0
+        var dString: String = summonerRevisionDate.description
+        var timeSince: String = summonerRevisionDate.timeIntervalSinceNow.description
         var rtr: String = ""
         
         rtr += "(\(summonerID)) \(summonerName) - Level \(summonerLevel)\n"
         rtr += "Profile Icon ID: \(summonerProfileIcon)\n"
-        rtr += "Last change: \(summonerRevisionDate)\n"
+        rtr += "Last change: \(dString) (\(timeSince) seconds ago)\n"
         
         return rtr
     }
@@ -38,19 +39,20 @@ public class MSSummoner: ResponseObjectSerializable, CustomStringConvertible {
         
         summonerName = ""
         
-        summonerRevisionDate = NSDate()
+        summonerRevisionDate = Date()
     }
     
     public required init?(response: HTTPURLResponse, representation: Any) {
         guard
             let rep = representation as? [String: Any],
-            let sID = rep["id"] as? Int,
-            let sProfileIcon = rep["profileIconId"] as? Int,
-            let sLevel = rep["summonerLevel"] as? Int,
+            let drilled = rep.values.first as? [String: Any],
+            let sID = drilled["id"] as? Int,
+            let sProfileIcon = drilled["profileIconId"] as? Int,
+            let sLevel = drilled["summonerLevel"] as? Int,
         
-            let sName = rep["name"] as? String,
+            let sName = drilled["name"] as? String,
         
-            let sRev = rep["revisionDate"] as? Double
+            let sRev = drilled["revisionDate"] as? Double
         else { return nil }
         
         summonerID = sID
@@ -59,6 +61,6 @@ public class MSSummoner: ResponseObjectSerializable, CustomStringConvertible {
         
         summonerName = sName
         
-        summonerRevisionDate = NSDate(timeIntervalSince1970: sRev)
+        summonerRevisionDate = Date(timeIntervalSince1970: sRev)
     }
 }
