@@ -1,6 +1,6 @@
 //
 //  Core.swift
-//  Pods
+//  LeagueAPI
 //
 //  Created by Mason Phillips on 26Dec16.
 //
@@ -17,9 +17,10 @@ public final class MSCoreLeagueApi {
     
     static var requestRegion: MSLeagueRegion = .all
     
-    // MARK: - Public 
+    // MARK: - Public Init
     public init(withKey k: String) {
         apiKey = k
+        MSCoreRouter.key = k
     }
     
     public convenience init(withKey k: String, usingRegion r: MSLeagueRegion) {
@@ -27,19 +28,36 @@ public final class MSCoreLeagueApi {
         MSCoreLeagueApi.requestRegion = r
     }
     
-    public func initializeStaticData() {
-        let championData: Array<MSChampion> = getChampionStaticData()
-    }
-    
-    private func getChampionStaticData() -> Array<MSChampion> {
-        let params: Parameters = ["champData": "all", "api_key": apiKey]
-        Alamofire.request("https://global.api.pvp.net/api/lol/static-data/\(MSCoreLeagueApi.requestRegion.rawValue)/v1.2/champion/22", parameters: params).responseObject { (response: DataResponse<MSChampion>) in
-            if let champ: MSChampion = response.result.value {
-                print(champ)
-                
+    // MARK: - Dynamic Data Methods
+    public func searchSummoner(byName n: String) -> MSSummoner {
+        var summoner: MSSummoner = MSSummoner()
+        
+        Alamofire.request(MSCoreRouter.searchSummoner(id: 0, name: n)).responseObject { (response: DataResponse<MSSummoner>) in
+            debugPrint(response)
+            
+            if let s = response.result.value {
+                summoner = s
             }
         }
         
-        return []
+        return summoner
+    }
+    
+    // MARK: - Static Data Methods
+    public func initializeStaticData() {
+        //_ = getChampionStaticData()
+        _ = searchSummoner(byName: "MatrixSenpai")
+    }
+    
+    private func getChampionStaticData() -> Array<MSChampion> {
+        var champions: Array<MSChampion> = []
+        
+        Alamofire.request(MSCoreRouter.searchChamp(id: 0)).responseCollection { (response: DataResponse<[MSChampion]>) in
+            if let champs = response.result.value {
+                champions = champs
+            }
+        }
+        
+        return champions
     }
 }

@@ -1,14 +1,29 @@
 PODS:
   - Alamofire (4.2.0)
+  - Datez (2.0.1)
   - LeagueAPI (0.1):
     - Alamofire
     - SwiftyJSON
+  - MMDrawerController (0.6.0):
+    - MMDrawerController/Core (= 0.6.0)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
+    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
+    - MMDrawerController/Subclass (= 0.6.0)
+  - MMDrawerController/Core (0.6.0)
+  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.6.0):
+    - MMDrawerController/Core
   - Neon (0.4.0)
   - SwiftyJSON (3.1.3)
 
 DEPENDENCIES:
   - Alamofire
+  - Datez
   - LeagueAPI (from `../`)
+  - MMDrawerController
   - Neon
   - SwiftyJSON
 
@@ -18,10 +33,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  Datez: 3a0875cf1f20d06157ebc48f338c05be86ae388c
   LeagueAPI: d3db40a2d5e73b65713603c0916e5580cb37b114
+  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
   SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
 
-PODFILE CHECKSUM: 065f1977efab7e6088df19514c872ecb52d91d15
+PODFILE CHECKSUM: ccfbd33afe6530491c198f75ae114cbfb2e03f61
 
 COCOAPODS: 1.2.0.beta.1

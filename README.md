@@ -10,6 +10,13 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+Latest Swift and Cocoapods
+Alamofire
+SwiftyJSON
+Datez
+
+## Usage
+See [the wiki](https://github.com/mathmatrix828/LeagueAPI/wiki) for usage details
 
 ## Installation
 

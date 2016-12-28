@@ -1,6 +1,6 @@
 //
 //  MSLeagueRegion.swift
-//  Pods
+//  LeagueAPI
 //
 //  Created by Mason Phillips on 26Dec16.
 //
